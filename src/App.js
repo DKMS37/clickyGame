@@ -1,51 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import Wrapper from "./components/Wrapper";
-
 import EmojiCard from "./components/EmojiCard";
-import friends from "./emoji.json";
+import emoji from "./emoji.json";
 
-function App() {
+class App extends Component {
+  state = {
+    emoji: emoji
+  }
+  render() {
+    return (
+      <Wrapper>
 
-  return (
-    <Wrapper>
-      < EmojiCard
-        image={friends[0].image}
-      />
-      < EmojiCard
-        image={friends[10].image}
-      />
-      < EmojiCard
-        image={friends[2].image}
-      />
-      < EmojiCard
-        image={friends[3].image}
-      />
-      < EmojiCard
-        image={friends[4].image}
-      />
-      < EmojiCard
-        image={friends[5].image}
-      />
-      < EmojiCard
-        image={friends[6].image}
-      />
-      < EmojiCard
-        image={friends[7].image}
-      />
-      < EmojiCard
-        image={friends[8].image}
-      />
-      < EmojiCard
-        image={friends[9].image}
-      />
-      < EmojiCard
-        image={friends[11].image}
-      />
-      < EmojiCard
-        image={friends[1].image}
-      />
-    </Wrapper>
-  );
+        {this.state.emoji.map(emoji => (
+          <EmojiCard
+            key={emoji.id}
+            id={emoji.id}
+            image={emoji.image}
+          />
+        ))}
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
