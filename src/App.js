@@ -62,7 +62,6 @@ class App extends Component {
               emoji={emoji} image={emoji.image} clickHandler={this.clickHandler} />)}
           </Row>
         </div>
-        <br />
         <div className="row">
           <Footer />
         </div>

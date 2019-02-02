@@ -35,6 +35,11 @@ background-color:#65747f;
 
 }
 
+.container-fluid {
+  height: 175px;
+  background-image: url("https://pngimage.net/wp-content/uploads/2018/05/bokeh-effect-png-2.png")
+}
+
 .svg-inline--fa {
 font-size: 100px;
 }
