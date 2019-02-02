@@ -33,7 +33,7 @@ class Header extends Component {
             <nav className="pinned amber">
                 <div>
                     <ul className="center navList">
-                        <li className="logo"><i class="em em-three_button_mouse"></i> Clicky Game <i class="em em-lion_face"></i></li>
+                        <li className="logo"><i className="em em-three_button_mouse"></i> Clicky Game <i className="em em-lion_face"></i></li>
                         {this.renderMessage(this.props.correct, this.props.gameWon)}
                         <li className="Score">Score: {this.props.score} | High Score: {this.props.highScore}</li>
                     </ul>

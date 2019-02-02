@@ -49,7 +49,7 @@ class App extends Component {
         <Row>
           <div className="container-fluid brown darken-4" >
             <CardPanel className="grey lighten-3">
-              <h5 className="text-center">Click an EM <i class="em em-smiley"></i> JI to earn POINTS, but make sure you don't click the same one Twice!</h5>
+              <h5 className="text-center">Click an EM <i className="em em-smiley"></i> JI to earn POINTS, but make sure you don't click the same one Twice!</h5>
             </CardPanel>
           </div>
         </Row>
