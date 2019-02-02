@@ -3,6 +3,8 @@ import EmojiCard from "./components/EmojiCard";
 import emoji from "./emoji.json";
 import { Row, CardPanel } from 'react-materialize';
 import Header from './components/Header/Header';
+import Footer from "./components/Footer/Footer";
+
 
 class App extends Component {
   state = {
@@ -41,8 +43,9 @@ class App extends Component {
   render() {
     return (
 
-      <div>
-        <div>
+      <div >
+
+        <div className="header">
           <Header correct={this.state.correct} gameWon={this.state.gameWon}
             score={this.state.score} highScore={this.state.highScore} />
         </div>
@@ -59,6 +62,11 @@ class App extends Component {
               emoji={emoji} image={emoji.image} clickHandler={this.clickHandler} />)}
           </Row>
         </div>
+        <br />
+        <div className="row">
+          <Footer />
+        </div>
+
       </div >
 
     );

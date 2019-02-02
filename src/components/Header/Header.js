@@ -3,7 +3,7 @@ import './Header.css'
 
 
 class Header extends Component {
-
+    
     componentDidmount() {
         window.clearTimeout(this.timeout)
     }
