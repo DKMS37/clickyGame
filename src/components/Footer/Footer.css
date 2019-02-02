@@ -1,0 +1,25 @@
+.footer {
+    background: #3d2722;
+    height: 100px;
+    color: #d80000;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    position: absolute;
+   
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffc200;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.footer>.bottom>img {
+    width: 50px;
+    position: relative; 
+}
