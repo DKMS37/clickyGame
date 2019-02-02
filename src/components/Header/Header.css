@@ -1,0 +1,43 @@
+ul.navList {
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+}
+
+.correct {
+    animation: growCorrect 0.5s;
+    animation-iteration-count: 1;
+}
+
+.incorrect {
+    animation: growIncorrect 0.5s;
+    animation-iteration-count: 1;
+}
+
+.Score {
+    font-weight: bolder;
+    color: #67210e;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: lemonchiffon;
+}
+
+@keyframes growCorrect {
+    0% {transform: scale(1); color: white; }
+    25% {transform: scale(1.5) }
+    50% {transform: scale(1.75); color: #058d00; }
+    50% {transform: scale(1.5) }
+    100% {transform: scale(1); color: rgb(6, 240, 104); }
+}
+
+@keyframes growIncorrect {
+    0% {transform: scale(1); color: white; }
+    25% {transform: scale(1.5) }
+    50% {transform: scale(1.75); color: #e20e0e; }
+    50% {transform: scale(1.5) }
+    100% {transform: scale(1); color: rgb(252, 229, 22); }
+}
