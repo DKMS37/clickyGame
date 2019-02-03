@@ -17,7 +17,7 @@ class Header extends Component {
             message = 'CLICK AN EMOJI TO START THE GAME!'
             className = ''
         } else {
-            message = gameWon ? 'AWESOME!!! YOU WON THE GAME!' : (correct ? 'CORRECT GUESSED! TRY ONE MORE!' : 'CLICKED TWICE! SORRY TRY AGAIN!')
+            message = gameWon ? 'AWESOME!!! YOU WON THE GAME!' : (correct ? 'CORRECT GUESSED! NEXT PLS!' : 'ALREADY CLICKED! TRY AGAIN!')
             className = correct ? 'correct' : 'incorrect'
         }
 
