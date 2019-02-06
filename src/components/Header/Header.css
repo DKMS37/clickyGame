@@ -1,0 +1,18 @@
+ul.navList {
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+}
+
+.Score {
+    font-weight: bolder;
+    color: #67210e;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #d80000;
+}
+
